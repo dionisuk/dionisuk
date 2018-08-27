@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://dionis.uk/</loc>
+  <lastmod>2018-05-16T19:38:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/about-me.html</loc>
+  <lastmod>2018-05-16T19:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/contact.html</loc>
+  <lastmod>2018-05-16T19:39:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/download/Denis_Ciocan_Resume.pdf</loc>
+  <lastmod>2018-05-16T07:00:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/portfolio/speedme.html</loc>
+  <lastmod>2018-05-16T19:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/portfolio/atkinshealth.html</loc>
+  <lastmod>2018-05-16T19:51:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/portfolio/ace.html</loc>
+  <lastmod>2018-05-16T19:50:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dionis.uk/portfolio/bankruptcyforms.html</loc>
+  <lastmod>2018-05-16T19:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

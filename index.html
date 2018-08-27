@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300i,500|Playfair+Display:400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Denis's Portfolio - Web Design & FrontEnd Development</title>
+    <script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'C6R71';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+    g.consent=function(a){g("consent",!arguments.length||a)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="row">
+                <div class="logo-box">
+                    <a href="/">
+                        <img src="/img/logo.svg" alt="Logo" class="logo">
+                    </a>
+
+                </div>
+                <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon">&nbsp;</span>
+                    </label>
+
+
+                    <div class="navigation__nav">
+                        <div class="navigation__list">
+                            <ul>
+                                <li class="navigation__item">
+                                    <a href="/about-me.html" class="navigation__link">About Me</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="/#projects" class="navigation__link">My Work</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="/contact.html" class="navigation__link">Contact Me</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="/#testimonials" class="navigation__link">Testimonials</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="/download/Denis_Ciocan_Resume.pdf" class="navigation__link" target="_blank">Download CV [.PDF]</a>
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <a href="https://www.linkedin.com/in/dionisc/" target="_blank">
+                                    <i class="icon-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/dionisci" target="_blank">
+                                    <i class="icon-twitter"></i>
+                                </a>
+
+                                <a href="/download/Denis_Ciocan_Resume.pdf" target="_blank">
+                                    <i class="icon-resume"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row pt15 pb10 hero">
+            <div class="col-1-of-2">
+                <div class="intro-box">
+                    <h1 class="primary">
+                        <span class="italic">Hello!</span>
+                        I'm Denis,
+                        <br> Nice to have you here.
+                    </h1>
+
+                    <p class="intro-text">
+                        I am a
+                        <span class="bold">Web Designer</span> and a
+                        <span class="bold">FrontEnd Developer</span> who loves to design and code efficient user experiences. Currently, residing
+                        in Northampton, UK.
+                    </p>
+
+                    <a href="/contact.html" class="btn btn-cta" target="_top">Get In Touch</a>
+                    <a href="#projects" class="btn btn-ghost">See things I've Done</a>
+
+                </div>
+            </div>
+            <div class="col-1-of-2 tile-container">
+                <img src="img/tiles-bg.jpg" alt="" class="tiles-bg">
+                <div class="tile-box">
+                    <div class="tile-row">
+                        <div class="tile">
+                            <a href="/portfolio/atkinshealth.html">
+                                <img src="img/atkins_tile_small.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="/portfolio/ace.html">
+                                <img src="img/ace_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="/portfolio/speedme.html">
+                                <img src="img/speedme_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/afi_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/getviews_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/carwash_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/frivio_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/mermaid_tile.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="#">
+                                <img src="img/fit_tile.jpg" alt="">
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-statement">
+            <p class="mission">
+                Over the years, I've designed and created over 100 websites
+                <br> Bellow you'll find just a few of the projects I've worked on
+            </p>
+
+            <div class="abstracts">
+                <div class="worm">
+                    <svg viewBox="0 0 255.5 159.5">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #efeeef;
+                                    stroke-width: 5px
+                                }
+                            </style>
+                        </defs>
+                        <image id="Vector_Smart_Object" width="183" height="152" y="7.5" data-name="Vector Smart Object" xlink:href="data:img/png;base64,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"
+                        />
+                    </svg>
+                </div>
+
+                <div class="triangle">
+                    <svg viewBox="0 0 149.21 125.69">
+                        <path data-name="Polygon 1" d="M146.7 123.19L2.49 115.01 67.34 2.49z" fill="none" stroke="#efeeef" stroke-width="5" fill-rule="evenodd"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects" id="projects">
+            <div class="row mobile-flex-container">
+                <div class="col-1-of-2 mobile-flex-part">
+                    <div class="project-details project-details--left">
+                        <h3 class="project-name">Speedme</h3>
+                        <p class="project-description">
+                            When obesity hits the web, slow loading websites happen. My mission was to help make the web feel lighter and load faster.
+                            What I managed to do?
+                        </p>
+
+                        <div class="project-tools">
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M126.216.727c-36.223-.011-72.284-.01-108.508-.01-5.181 0-10.451-.004-15.632.011-.328.001-1.076.153-1.076.236v126.036h126v-126.036c0-.083-.414-.237-.784-.237zm-12.736 113.939c-32.641-.038-65.271-.03-97.912-.03-1.576 0-1.569-.003-1.569-1.627v-97.797c.001-1.607-.015-1.212 1.578-1.212h97.798c1.638 0 1.625-.396 1.625 1.291v48.837c0 16.32-.007 32.64.036 48.959.004 1.243-.289 1.58-1.556 1.579zM56.82 39.644c-6.668-1.563-13.38-.792-20.085-.107-1.423.146-1.695.755-1.691 2.018.043 15.207-.044 30.414-.044 45.621v.824h9v-17.861c5 .375 9.576.286 14.049-1.31 7.169-2.558 10.752-8.111 10.365-16.219-.313-6.548-4.426-11.286-11.594-12.966zm-1.953 22.344c-3.194 1.557-6.59 1.52-10.005 1.058-.266-.036-.675-.511-.677-.784-.04-5.331-.03-10.661-.03-16.138 3.131-.488 6.1-.726 9.062.018 3.673.923 5.804 3.319 6.201 6.917.436 3.954-1.247 7.319-4.551 8.929zM88.168 69.094c-1.469-.805-3.08-1.347-4.606-2.053-1.41-.653-2.833-1.296-4.174-2.076-.935-.543-1.36-1.492-1.36-2.611 0-1.892 1.294-3.417 3.504-3.598 1.649-.135 3.361.035 4.994.34 1.376.256 2.681.899 4.082 1.395l1.767-6.269c-3.345-1.624-6.749-2.235-10.285-2.11-3.006.105-5.814.871-8.352 2.599-4.743 3.229-7.057 11.807.051 16.416 1.805 1.171 3.893 1.905 5.851 2.841 1.218.583 2.489 1.079 3.641 1.772 1.452.874 1.946 2.297 1.694 3.94-.247 1.615-1.33 2.638-2.836 2.874-1.68.264-3.466.435-5.118.144-2.339-.411-4.599-1.281-6.974-1.979-.426 1.59-.831 3.349-1.384 5.06-.303.938-.125 1.401.795 1.768 5.617 2.231 11.334 2.69 17.082.717 4.296-1.475 6.915-4.524 7.256-9.169.332-4.527-1.708-7.851-5.628-10.001z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063 8.078-90.48h-88.66zm69.21 50.488l-2.35 21.892.009 1.875-22.539 6.295v.001l-.018.015-22.719-6.225-1.537-17.341h11.141l.79 8.766 12.347 3.295-.004.015v-.032l12.394-3.495 1.308-14.549h-25.907000000000004l-.222-2.355-.506-5.647-.265-2.998h27.886000000000003l1.014-11h-42.473l-.223-2.589-.506-6.03-.265-3.381h55.597l-.267 3.334-2.685 30.154"></path>
+                                    <path fill="#e3e2e3" d="M89 14.374l-7.149-8.374h7.149v-5h-16v4.363l8.39 7.637h-8.39v5h16zM70 14.374l-6.807-8.374h6.807v-5h-15v4.363l7.733 7.637h-7.733v5h15zM52 13h-8v-7h8v-5h-14v17h14z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499 8.096-90.102h-88.862zm72.041 20.471l-.507 5.834-.223 2.695h-42.569l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69-22.79 6.134v-.005l-.027.012-22.777-5.916-1.546-17.055h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649 1.296-13.728h-38.555l-2.734-30.836-.267-3.164h55.724000000000004l-.266 2.471zM27.956 1.627h5.622v5.556h5.144v-5.556h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623v-16.822zM51.738 7.206h-4.95v-5.579h15.525v5.579h-4.952v11.243h-5.623v-11.243zM64.777 1.627h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502v-16.822zM86.513 1.627h5.624v11.262h7.907v5.561h-13.531v-16.823z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286-34.652-.618-63.608 27.5-63.617 61.597-.01 35.079 27.612 63.064 62.209 63.014zm-.101-121.594c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719 8.872-.135 17.747-.135 26.618.008 1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58 6.463 19.225 12.793 38.057 19.349 57.56 2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113-25.392-23.566-65.294-15.13-79.997 10.475 5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zM49.274 113.867c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zM40.818 111.789l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zM117.246 67.227c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"></path>
+                                </svg>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <a href="/portfolio/speedme.html" class="btn btn-project">View Case Study</a>
+                    </div>
+                </div>
+                <div class="col-1-of-2 mobile-flex-part project-preview">
+
+                    <img src="/img/project_bg_right.jpg" alt="Project Background" class="project-bg bg-right">
+
+                    <div>
+                        <a href="/portfolio/speedme.html">
+                            <img src="/img/speedme_thumb.jpg" alt="Speedme" class="thumbnail thumbnail--right">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-projects mt10">
+
+            <div class="row">
+
+                <div class="col-1-of-2">
+
+                    <img src="img/project_bg_left.jpg" alt="Project Background" class="project-bg bg-left">
+
+                    <div class="project-preview">
+                        <a href="/portfolio/atkinshealth.html">
+                            <img src="/img/atkins_thumb.jpg" alt="Speedme" class="thumbnail thumnail--left">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="project-details project-details--right">
+                        <h3 class="project-name">AtkinsHealth</h3>
+                        <p class="project-description">
+                            A team of motivated enthusiastic exercise physiologists wants to improve health through movement. A clean and efficient website
+                            to make them known out there was needed.
+                        </p>
+
+                        <div class="project-tools">
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M126.216.727c-36.223-.011-72.284-.01-108.508-.01-5.181 0-10.451-.004-15.632.011-.328.001-1.076.153-1.076.236v126.036h126v-126.036c0-.083-.414-.237-.784-.237zm-12.736 113.939c-32.641-.038-65.271-.03-97.912-.03-1.576 0-1.569-.003-1.569-1.627v-97.797c.001-1.607-.015-1.212 1.578-1.212h97.798c1.638 0 1.625-.396 1.625 1.291v48.837c0 16.32-.007 32.64.036 48.959.004 1.243-.289 1.58-1.556 1.579zM56.82 39.644c-6.668-1.563-13.38-.792-20.085-.107-1.423.146-1.695.755-1.691 2.018.043 15.207-.044 30.414-.044 45.621v.824h9v-17.861c5 .375 9.576.286 14.049-1.31 7.169-2.558 10.752-8.111 10.365-16.219-.313-6.548-4.426-11.286-11.594-12.966zm-1.953 22.344c-3.194 1.557-6.59 1.52-10.005 1.058-.266-.036-.675-.511-.677-.784-.04-5.331-.03-10.661-.03-16.138 3.131-.488 6.1-.726 9.062.018 3.673.923 5.804 3.319 6.201 6.917.436 3.954-1.247 7.319-4.551 8.929zM88.168 69.094c-1.469-.805-3.08-1.347-4.606-2.053-1.41-.653-2.833-1.296-4.174-2.076-.935-.543-1.36-1.492-1.36-2.611 0-1.892 1.294-3.417 3.504-3.598 1.649-.135 3.361.035 4.994.34 1.376.256 2.681.899 4.082 1.395l1.767-6.269c-3.345-1.624-6.749-2.235-10.285-2.11-3.006.105-5.814.871-8.352 2.599-4.743 3.229-7.057 11.807.051 16.416 1.805 1.171 3.893 1.905 5.851 2.841 1.218.583 2.489 1.079 3.641 1.772 1.452.874 1.946 2.297 1.694 3.94-.247 1.615-1.33 2.638-2.836 2.874-1.68.264-3.466.435-5.118.144-2.339-.411-4.599-1.281-6.974-1.979-.426 1.59-.831 3.349-1.384 5.06-.303.938-.125 1.401.795 1.768 5.617 2.231 11.334 2.69 17.082.717 4.296-1.475 6.915-4.524 7.256-9.169.332-4.527-1.708-7.851-5.628-10.001z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063 8.078-90.48h-88.66zm69.21 50.488l-2.35 21.892.009 1.875-22.539 6.295v.001l-.018.015-22.719-6.225-1.537-17.341h11.141l.79 8.766 12.347 3.295-.004.015v-.032l12.394-3.495 1.308-14.549h-25.907000000000004l-.222-2.355-.506-5.647-.265-2.998h27.886000000000003l1.014-11h-42.473l-.223-2.589-.506-6.03-.265-3.381h55.597l-.267 3.334-2.685 30.154"></path>
+                                    <path fill="#e3e2e3" d="M89 14.374l-7.149-8.374h7.149v-5h-16v4.363l8.39 7.637h-8.39v5h16zM70 14.374l-6.807-8.374h6.807v-5h-15v4.363l7.733 7.637h-7.733v5h15zM52 13h-8v-7h8v-5h-14v17h14z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499 8.096-90.102h-88.862zm72.041 20.471l-.507 5.834-.223 2.695h-42.569l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69-22.79 6.134v-.005l-.027.012-22.777-5.916-1.546-17.055h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649 1.296-13.728h-38.555l-2.734-30.836-.267-3.164h55.724000000000004l-.266 2.471zM27.956 1.627h5.622v5.556h5.144v-5.556h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623v-16.822zM51.738 7.206h-4.95v-5.579h15.525v5.579h-4.952v11.243h-5.623v-11.243zM64.777 1.627h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502v-16.822zM86.513 1.627h5.624v11.262h7.907v5.561h-13.531v-16.823z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286-34.652-.618-63.608 27.5-63.617 61.597-.01 35.079 27.612 63.064 62.209 63.014zm-.101-121.594c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719 8.872-.135 17.747-.135 26.618.008 1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58 6.463 19.225 12.793 38.057 19.349 57.56 2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113-25.392-23.566-65.294-15.13-79.997 10.475 5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zM49.274 113.867c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zM40.818 111.789l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zM117.246 67.227c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"></path>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <a href="/portfolio/atkinshealth.html" class="btn btn-project">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects mt10">
+            <div class="row mobile-flex-container">
+                <div class="col-1-of-2 mobile-flex-part">
+                    <div class="project-details project-details--left">
+                        <h3 class="project-name">Ace-Hi</h3>
+                        <p class="project-description">
+                            Ace-Hi is a beautiful western-themed adventure park that needed someone to tell their story online in a simple and fun manner.
+                        </p>
+
+                        <div class="project-tools">
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M126.216.727c-36.223-.011-72.284-.01-108.508-.01-5.181 0-10.451-.004-15.632.011-.328.001-1.076.153-1.076.236v126.036h126v-126.036c0-.083-.414-.237-.784-.237zm-12.736 113.939c-32.641-.038-65.271-.03-97.912-.03-1.576 0-1.569-.003-1.569-1.627v-97.797c.001-1.607-.015-1.212 1.578-1.212h97.798c1.638 0 1.625-.396 1.625 1.291v48.837c0 16.32-.007 32.64.036 48.959.004 1.243-.289 1.58-1.556 1.579zM56.82 39.644c-6.668-1.563-13.38-.792-20.085-.107-1.423.146-1.695.755-1.691 2.018.043 15.207-.044 30.414-.044 45.621v.824h9v-17.861c5 .375 9.576.286 14.049-1.31 7.169-2.558 10.752-8.111 10.365-16.219-.313-6.548-4.426-11.286-11.594-12.966zm-1.953 22.344c-3.194 1.557-6.59 1.52-10.005 1.058-.266-.036-.675-.511-.677-.784-.04-5.331-.03-10.661-.03-16.138 3.131-.488 6.1-.726 9.062.018 3.673.923 5.804 3.319 6.201 6.917.436 3.954-1.247 7.319-4.551 8.929zM88.168 69.094c-1.469-.805-3.08-1.347-4.606-2.053-1.41-.653-2.833-1.296-4.174-2.076-.935-.543-1.36-1.492-1.36-2.611 0-1.892 1.294-3.417 3.504-3.598 1.649-.135 3.361.035 4.994.34 1.376.256 2.681.899 4.082 1.395l1.767-6.269c-3.345-1.624-6.749-2.235-10.285-2.11-3.006.105-5.814.871-8.352 2.599-4.743 3.229-7.057 11.807.051 16.416 1.805 1.171 3.893 1.905 5.851 2.841 1.218.583 2.489 1.079 3.641 1.772 1.452.874 1.946 2.297 1.694 3.94-.247 1.615-1.33 2.638-2.836 2.874-1.68.264-3.466.435-5.118.144-2.339-.411-4.599-1.281-6.974-1.979-.426 1.59-.831 3.349-1.384 5.06-.303.938-.125 1.401.795 1.768 5.617 2.231 11.334 2.69 17.082.717 4.296-1.475 6.915-4.524 7.256-9.169.332-4.527-1.708-7.851-5.628-10.001z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M1 1v125.792c1 .082.99.235 1.359.235 36.269.011 72.665.011 108.934.011 4.994 0 9.859.004 14.854-.011.328-.001.854-.153.854-.235-.001-41.959-.001-83.792-.001-125.792h-126zm114 62.914v48.551c0 1.688-.253 1.535-1.88 1.535h-97.349c-1.627 0-1.771.154-1.771-1.534v-97.226c0-1.689.144-2.24 1.894-2.24h97.103c1.751 0 2.003.551 2.003 2.363v48.551zM64.414 40.368c-.214-.662-.612-.696-1.193-.693-3.114.019-6.229.069-9.341 0-.984-.021-1.411.274-1.715 1.233-4.385 13.785-8.817 27.561-13.233 41.336-.72 2.246-1.417 4.501-2.185 6.939 2.911 0 5.571-.04 8.229.026.903.022 1.279-.275 1.525-1.126 1.138-3.924 2.37-7.821 3.497-11.748.265-.926.694-1.176 1.625-1.165 4.424.052 8.85.052 13.274 0 .861-.01 1.211.268 1.455 1.062 1.213 3.949 2.502 7.874 3.714 11.823.251.816.566 1.13 1.507 1.062 1.303-.095 2.619-.117 3.93-.117h4.592l-.021-.331c-5.222-16.107-10.451-32.19-15.66-48.301zm-12.413 27.632c2.037-7 4.059-13.848 6.051-20.644 2.053 6.772 4.141 13.644 6.26 20.644h-12.311zM82 89h10v-36h-10v36zM87.071 38.555c-2.963.003-5.151 2.107-5.131 4.936.02 2.837 2.122 4.857 5.057 4.862 3.051.004 5.208-2.015 5.187-4.856-.022-2.91-2.127-4.945-5.113-4.942z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <a href="/portfolio/ace.html" class="btn btn-project">View Case Study</a>
+                    </div>
+                </div>
+                <div class="col-1-of-2 mobile-flex-part">
+
+                    <img src="img/project_bg_right.jpg" alt="Project Background" class="project-bg bg-right">
+
+                    <div class="project-preview">
+                        <a href="/portfolio/ace.html">
+                            <img src="/img/ace_thumb.jpg" alt="Ace-Hi" class="thumbnail thumbnail--right">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects mt10">
+
+            <div class="row">
+
+                <div class="col-1-of-2">
+                    <img src="img/project_bg_left.jpg" alt="Project Background" class="project-bg bg-left">
+
+                    <div class="project-preview">
+                        <a href="/portfolio/bankruptcyforms.html">
+                            <img src="/img/bank_thumb.jpg" alt="Speedme" class="thumbnail thumnail--left">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="project-details project-details--right">
+                        <h3 class="project-name">BankruptyFormProcessing</h3>
+                        <p class="project-description">
+                            Considering bankruptcy alone is a tough decision, a fast and modern website was the option to ease that experience.
+                        </p>
+
+                        <div class="project-tools">
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M126.216.727c-36.223-.011-72.284-.01-108.508-.01-5.181 0-10.451-.004-15.632.011-.328.001-1.076.153-1.076.236v126.036h126v-126.036c0-.083-.414-.237-.784-.237zm-12.736 113.939c-32.641-.038-65.271-.03-97.912-.03-1.576 0-1.569-.003-1.569-1.627v-97.797c.001-1.607-.015-1.212 1.578-1.212h97.798c1.638 0 1.625-.396 1.625 1.291v48.837c0 16.32-.007 32.64.036 48.959.004 1.243-.289 1.58-1.556 1.579zM56.82 39.644c-6.668-1.563-13.38-.792-20.085-.107-1.423.146-1.695.755-1.691 2.018.043 15.207-.044 30.414-.044 45.621v.824h9v-17.861c5 .375 9.576.286 14.049-1.31 7.169-2.558 10.752-8.111 10.365-16.219-.313-6.548-4.426-11.286-11.594-12.966zm-1.953 22.344c-3.194 1.557-6.59 1.52-10.005 1.058-.266-.036-.675-.511-.677-.784-.04-5.331-.03-10.661-.03-16.138 3.131-.488 6.1-.726 9.062.018 3.673.923 5.804 3.319 6.201 6.917.436 3.954-1.247 7.319-4.551 8.929zM88.168 69.094c-1.469-.805-3.08-1.347-4.606-2.053-1.41-.653-2.833-1.296-4.174-2.076-.935-.543-1.36-1.492-1.36-2.611 0-1.892 1.294-3.417 3.504-3.598 1.649-.135 3.361.035 4.994.34 1.376.256 2.681.899 4.082 1.395l1.767-6.269c-3.345-1.624-6.749-2.235-10.285-2.11-3.006.105-5.814.871-8.352 2.599-4.743 3.229-7.057 11.807.051 16.416 1.805 1.171 3.893 1.905 5.851 2.841 1.218.583 2.489 1.079 3.641 1.772 1.452.874 1.946 2.297 1.694 3.94-.247 1.615-1.33 2.638-2.836 2.874-1.68.264-3.466.435-5.118.144-2.339-.411-4.599-1.281-6.974-1.979-.426 1.59-.831 3.349-1.384 5.06-.303.938-.125 1.401.795 1.768 5.617 2.231 11.334 2.69 17.082.717 4.296-1.475 6.915-4.524 7.256-9.169.332-4.527-1.708-7.851-5.628-10.001z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063 8.078-90.48h-88.66zm69.21 50.488l-2.35 21.892.009 1.875-22.539 6.295v.001l-.018.015-22.719-6.225-1.537-17.341h11.141l.79 8.766 12.347 3.295-.004.015v-.032l12.394-3.495 1.308-14.549h-25.907000000000004l-.222-2.355-.506-5.647-.265-2.998h27.886000000000003l1.014-11h-42.473l-.223-2.589-.506-6.03-.265-3.381h55.597l-.267 3.334-2.685 30.154"></path>
+                                    <path fill="#e3e2e3" d="M89 14.374l-7.149-8.374h7.149v-5h-16v4.363l8.39 7.637h-8.39v5h16zM70 14.374l-6.807-8.374h6.807v-5h-15v4.363l7.733 7.637h-7.733v5h15zM52 13h-8v-7h8v-5h-14v17h14z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499 8.096-90.102h-88.862zm72.041 20.471l-.507 5.834-.223 2.695h-42.569l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69-22.79 6.134v-.005l-.027.012-22.777-5.916-1.546-17.055h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649 1.296-13.728h-38.555l-2.734-30.836-.267-3.164h55.724000000000004l-.266 2.471zM27.956 1.627h5.622v5.556h5.144v-5.556h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623v-16.822zM51.738 7.206h-4.95v-5.579h15.525v5.579h-4.952v11.243h-5.623v-11.243zM64.777 1.627h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502v-16.822zM86.513 1.627h5.624v11.262h7.907v5.561h-13.531v-16.823z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill="#e3e2e3" d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="tool-icon">
+                                <svg viewBox="0 0 128 128">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#e3e2e3" d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286-34.652-.618-63.608 27.5-63.617 61.597-.01 35.079 27.612 63.064 62.209 63.014zm-.101-121.594c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719 8.872-.135 17.747-.135 26.618.008 1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58 6.463 19.225 12.793 38.057 19.349 57.56 2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113-25.392-23.566-65.294-15.13-79.997 10.475 5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zM49.274 113.867c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zM40.818 111.789l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zM117.246 67.227c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <a href="/portfolio/bankruptcyforms.html" class="btn btn-project">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="testimonials" class="section-testimonials">
+            <h2 class="subtitle">Testimonials</h2>
+            <div class="row tst">
+                <div class="col-1-of-2">
+                    <figure>
+                        <div class="citation-mark">
+                            <svg style="height:5rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 63">
+                                <path d="M4.9 47.3c-1.2-1.8-2.2-4.1-2.9-6.8C1.3 37.8.9 35 .9 32c0-6.4 1.6-12.1 4.9-17.3 3.2-5.1 8-9.1 14.4-12.1l1.7 3.3c-3.6 1.5-6.7 3.7-9.3 6.8-2.6 3.1-4.2 6.2-4.7 9.4-.4 1.5-.6 2.9-.6 4.2 0 1.2.2 2.4.6 3.5 2.7-2.9 6.3-4.4 10.7-4.4 4.3 0 7.8 1.3 10.5 3.8s4 6 4 10.4c0 4.2-1.4 7.6-4.2 10.2-2.8 2.6-6.4 4-10.9 4-6 0-10.4-2.2-13.1-6.5zm37.9 0c-1.2-1.8-2.2-4.1-2.9-6.8-.7-2.7-1.1-5.5-1.1-8.5 0-6.4 1.6-12.1 4.9-17.3 3.2-5.2 8.1-9.2 14.4-12.1l1.7 3.3c-3.6 1.5-6.7 3.7-9.3 6.8-2.6 3.1-4.2 6.2-4.7 9.4-.4 1.5-.6 2.9-.6 4.2 0 1.2.2 2.4.6 3.5 2.7-2.9 6.3-4.4 10.7-4.4 4.3 0 7.8 1.3 10.5 3.8s4 6 4 10.4c0 4.2-1.4 7.6-4.2 10.2-2.8 2.6-6.4 4-10.9 4-6 0-10.4-2.2-13.1-6.5z"
+                                    fill="#efeeef" />
+                            </svg>
+                        </div>
+                        <div class="testimonial-container">
+                            <div class="ratings">
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+
+                            <blockquote>
+                                <p class="testimonial-copy">
+                                    Dionis is an absolute pleasure to work with and is definitely an expert in his field. He is reliable, trustworthy and guides
+                                    you throughout so I look forward to working on many projects together in the future.
+                                </p>
+                                <footer>
+                                    <cite class="author">David G.</cite>
+                                    <span class="location">
+                                        London, UK
+                                    </span>
+                                    <div class="platform">
+                                        <img src="img/elance.gif" alt="">
+                                    </div>
+                                </footer>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-1-of-2">
+                    <figure>
+                        <div class="citation-mark">
+                            <svg style="height:5rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 63">
+                                <path d="M4.9 47.3c-1.2-1.8-2.2-4.1-2.9-6.8C1.3 37.8.9 35 .9 32c0-6.4 1.6-12.1 4.9-17.3 3.2-5.1 8-9.1 14.4-12.1l1.7 3.3c-3.6 1.5-6.7 3.7-9.3 6.8-2.6 3.1-4.2 6.2-4.7 9.4-.4 1.5-.6 2.9-.6 4.2 0 1.2.2 2.4.6 3.5 2.7-2.9 6.3-4.4 10.7-4.4 4.3 0 7.8 1.3 10.5 3.8s4 6 4 10.4c0 4.2-1.4 7.6-4.2 10.2-2.8 2.6-6.4 4-10.9 4-6 0-10.4-2.2-13.1-6.5zm37.9 0c-1.2-1.8-2.2-4.1-2.9-6.8-.7-2.7-1.1-5.5-1.1-8.5 0-6.4 1.6-12.1 4.9-17.3 3.2-5.2 8.1-9.2 14.4-12.1l1.7 3.3c-3.6 1.5-6.7 3.7-9.3 6.8-2.6 3.1-4.2 6.2-4.7 9.4-.4 1.5-.6 2.9-.6 4.2 0 1.2.2 2.4.6 3.5 2.7-2.9 6.3-4.4 10.7-4.4 4.3 0 7.8 1.3 10.5 3.8s4 6 4 10.4c0 4.2-1.4 7.6-4.2 10.2-2.8 2.6-6.4 4-10.9 4-6 0-10.4-2.2-13.1-6.5z"
+                                    fill="#efeeef" />
+                            </svg>
+                        </div>
+                        <div class="testimonial-container">
+                            <div class="ratings">
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                                <svg class="star" viewBox="0 0 23.813 22">
+                                    <path data-name="Polygon 2 copy" d="M23.828 8.4l-7.534 5.19L18.883 22l-7.212-5.22L4.157 22l3.077-8.41L.001 8.4l9.113.02L12.158 0l2.556 8.42z"
+                                        fill="#15b5df" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+
+                            <blockquote>
+                                <p class="testimonial-copy">
+                                    Swift, professional and good communicator. It was a pleasure to work with you, and we hope to continue the collaboration
+                                    in the future.
+                                </p>
+                                <footer>
+                                    <cite class="author">Christian K.</cite>
+                                    <span class="location">
+                                        Zürich, CH
+                                    </span>
+                                    <div class="platform">
+                                        <img src="img/elance.gif" alt="">
+                                    </div>
+                                </footer>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact txt-center">
+            <img src="img/contact-bg.jpg" alt="" class="contact-bg">
+            <div class="row index2">
+                <h2 class="subtitle">Let's Work Together!</h2>
+                <p class="contact-copy x-center w70">
+                    Generally, I'm a serious guy working really hard to offer masterpiece websites for my clients. I built excellent projects
+                    with awesome people for about five years. Today is a great chance to work together and make extraordinary
+                    stuff.
+                </p>
+
+                <a href="/contact.html" class="btn btn-cta">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+
+            <div class="copyright">&copy; 2018 dionis.uk - Designed and Hand Coded &bull; hello@dionis.uk </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/dionisc/" target="_blank">
+                    <i class="icon-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/dionisci" target="_blank">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a href="/download/Denis_Ciocan_Resume.pdf" target="_blank">
+                    <i class="icon-resume"></i>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="sub-footer txt-center">
+            For anyone interested the code along with the wireframe, mockup are available on my <a href="https://github.com/MrDiCi/portfolio" target="_blank">GitHub profile</a>
+        </div>
+    </footer>
+
+    <script>
+        // cache DOM
+        const navigation = document.querySelector('.navigation')
+        const navCheckbox = navigation.querySelector('.navigation__checkbox')
+        const navItems = navigation.querySelectorAll('.navigation__item')
+        navItems.forEach(item =>
+            item.addEventListener('click', _ => navCheckbox.checked = false))
+    </script>
+</body>
+
+</html>

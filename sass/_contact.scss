@@ -1,0 +1,25 @@
+.contact-form {
+  margin-left: 3rem;
+  font-family: $font-primary;
+  input,
+  textarea {
+    font-family: $font-primary;
+    display: block;
+    height: 30px;
+    padding: 1rem 2rem;
+    background: #fff;
+    border: 2px solid rgba(202, 201, 202, 0.7);
+    margin-bottom: 25px;
+  }
+  input {
+    height: 5rem;
+    width: 30rem;
+  }
+  textarea {
+    height: 20rem;
+    width: 50rem;
+  }
+  button {
+    cursor: pointer;
+  }
+}

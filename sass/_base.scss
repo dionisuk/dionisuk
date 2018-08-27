@@ -1,0 +1,355 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  // border: 1px solid red;
+}
+
+html {
+  //This defines what 1rem is
+
+  /*
+
+ - phone - 600px
+ - tab-port - 900px
+ - tab-land - 1200px
+ - desktop - 1800px
+ - 
+
+
+*/
+
+  font-size: 62.5%; // 1rem = 10px; 10px/16 = 62.5% - This will be used for resolutions above 1800
+
+  @include respond(desktop) {
+    font-size: 56.25%; //1rem = 9px, 12/16
+  }
+
+  @include respond(tab-land) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 56.25 %
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%; // 1rem = 6px, 6/16 = 37.5%
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-copy;
+  line-height: 1.7;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: rgba($color-light-gray-1, 0.5);
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
+}
+
+main,
+footer {
+  background-color: #fff;
+  display: block;
+  overflow: hidden;
+}
+
+main {
+  padding-bottom: 10rem;
+}
+
+// Statement
+section {
+  padding: 10rem 0;
+
+  &.section-statement {
+    position: relative;
+
+    @include respond(tab-port) {
+      padding: 0rem 3rem;
+    }
+  }
+}
+
+.mission {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $color-black;
+}
+
+.worm {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 20rem;
+  height: auto;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.triangle {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  width: 10rem;
+  height: auto;
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.highlight-text::after {
+  background: url(/img/highlight-text.png) no-repeat;
+  content: " ";
+  position: absolute;
+  width: 30rem;
+  height: 5rem;
+  // margin: 0;
+  background-position: center;
+  background-size: contain;
+  transform: translateX(-25rem);
+  z-index: -1;
+}
+
+//Projects
+
+.section-projects {
+  overflow: hidden;
+  position: relative;
+  .project-preview {
+    max-width: 70rem;
+    position: relative;
+    z-index: 3;
+    &.left {
+      transform: translateX(-8rem);
+    }
+  }
+}
+
+// Projects Mobile Flex
+.mobile-flex-container {
+  @include respond(tab-port) {
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    & .mobile-flex-part:nth-child(1) {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+    }
+    & .mobile-flex-part:nth-child(2) {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+    }
+  }
+}
+
+.project-details {
+  position: relative;
+  margin-top: 5rem;
+  width: 80%;
+  z-index: 4;
+  @include respond(tab-port) {
+    width: 100%;
+    text-align: center;
+  }
+  &--right {
+    margin-left: 5rem;
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+  &--left {
+  }
+}
+
+.project-tools {
+  margin: 3rem 0;
+  width: 25rem;
+  @include respond(tab-port) {
+    margin: 3rem auto;
+  }
+  @include clearfix;
+}
+
+.tool-icon {
+  width: 3.5rem;
+  height: 3rem;
+  float: left;
+  margin-right: 1.5rem;
+}
+.project-description {
+  margin: 2rem 0;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #fff;
+  box-shadow: 0 -5px 20px 0px rgba($color-light-gray-3, 0.4);
+  position: relative;
+  z-index: 3;
+
+  &--left {
+    float: left;
+  }
+  &--right {
+    float: right;
+  }
+}
+
+.project-bg {
+  position: absolute;
+  z-index: 1;
+  // height: 100%;
+  &.bg-left {
+    transform: translate(-9rem, -10rem);
+
+    @include respond(tab-port) {
+      transform: translate(-9rem, -24rem) rotate(103deg);
+      height: unset;
+    }
+  }
+  &.bg-right {
+    transform: translate(-16rem, -19rem);
+    @include respond(tab-port) {
+      height: unset;
+      max-width: 100%;
+    }
+  }
+}
+
+// Testimonials
+.platform {
+  float: right;
+}
+
+.star {
+  height: 2.25rem;
+  width: auto;
+}
+
+cite.author {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 1.2;
+}
+
+span.location {
+  font-size: 1.4rem;
+}
+
+p.testimonial-copy {
+  margin: 2rem 0 5rem;
+  font-style: italic;
+}
+
+.tst {
+  position: relative;
+  padding-top: 10rem;
+}
+
+.testimonial-container {
+  padding-left: 9rem;
+}
+
+.citation-mark {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+}
+
+//Contact
+.contact {
+  position: relative;
+  padding-bottom: 15rem;
+}
+
+.contact-copy {
+  // width: 65%;
+  // margin: 0 auto;
+  padding: 6rem 0;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+
+.contact-bg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -3rem);
+}
+
+.index2 {
+  z-index: 2;
+  position: relative;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #3e3e3e42;
+}
+
+.about-photo {
+  width: 80%;
+}
+
+//Footer
+
+.footer {
+  color: #565656;
+  font-size: 1.4rem;
+  .row {
+    padding-top: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  background: $color-black;
+  .copyright {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    @include respond(tab-port) {
+      float: none;
+      text-align: center;
+    }
+  }
+  .social,
+  .footer-social {
+    float: right;
+    font-size: 3rem;
+    @include respond(tab-port) {
+      float: none;
+      text-align: center;
+    }
+    a:link,
+    a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      color: rgba(#565656, 0.8);
+    }
+  }
+  .sub-footer {
+    border-top: 1px solid #1e1e1e;
+    color: #3b3b3b;
+    padding: 2.5rem 0;
+  }
+}
