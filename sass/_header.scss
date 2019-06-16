@@ -5,6 +5,10 @@
   background-color: #fff;
   width: 100%;
 
+  @include respond(tab-land) {
+    overflow: visible;
+  }
+
   .social {
     font-size: 3rem;
     @include respond(tab-port) {
