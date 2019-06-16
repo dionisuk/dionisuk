@@ -58,7 +58,8 @@ body {
   background-color: rgba(239, 238, 239, 0.5); }
   @media (max-width: 75em) {
     body {
-      padding: 0; } }
+      padding: 0;
+      overflow-x: hidden; } }
 
 main,
 footer {
@@ -72,7 +73,8 @@ main {
 section {
   padding: 10rem 0; }
   section.section-statement {
-    position: relative; }
+    position: relative;
+    z-index: 5; }
     @media (max-width: 56.25em) {
       section.section-statement {
         padding: 0rem 3rem; } }
@@ -115,7 +117,6 @@ section {
   z-index: -1; }
 
 .section-projects {
-  overflow: hidden;
   position: relative; }
   .section-projects .project-preview {
     max-width: 70rem;
@@ -123,6 +124,13 @@ section {
     z-index: 3; }
     .section-projects .project-preview.left {
       transform: translateX(-8rem); }
+
+@media (max-width: 75em) {
+  .section-testimonials {
+    position: relative;
+    z-index: 1; }
+    .section-testimonials .subtitle {
+      margin-bottom: 4rem; } }
 
 @media (max-width: 56.25em) {
   .mobile-flex-container {
@@ -145,7 +153,9 @@ section {
   @media (max-width: 56.25em) {
     .project-details {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      display: flex;
+      flex-direction: column; } }
   .project-details--right {
     margin-left: 5rem; }
     @media (max-width: 56.25em) {
@@ -153,8 +163,7 @@ section {
         margin-left: 0; } }
 
 .project-tools {
-  margin: 3rem 0;
-  width: 25rem; }
+  margin: 3rem 0; }
   @media (max-width: 56.25em) {
     .project-tools {
       margin: 3rem auto; } }
@@ -262,6 +271,50 @@ p.testimonial-copy {
 .about-photo {
   width: 80%; }
 
+.footer {
+  color: #565656;
+  font-size: 1.4rem;
+  background: #171215; }
+  .footer .row {
+    padding-top: 2rem; }
+    .footer .row:not(:last-child) {
+      margin-bottom: 2rem; }
+  .footer .copyright {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-top: 1rem; }
+    @media (max-width: 56.25em) {
+      .footer .copyright {
+        float: none;
+        text-align: center; } }
+  .footer .social,
+  .footer .footer-social {
+    float: right;
+    font-size: 3rem; }
+    @media (max-width: 56.25em) {
+      .footer .social,
+      .footer .footer-social {
+        float: none;
+        text-align: center; } }
+    .footer .social a:link,
+    .footer .social a:visited,
+    .footer .footer-social a:link,
+    .footer .footer-social a:visited {
+      color: inherit;
+      text-decoration: none; }
+    .footer .social a:hover,
+    .footer .social a:active,
+    .footer .footer-social a:hover,
+    .footer .footer-social a:active {
+      color: rgba(86, 86, 86, 0.8); }
+  .footer .sub-footer {
+    border-top: 1px solid #1e1e1e;
+    color: inherit;
+    padding: 2.5rem 0; }
+    .footer .sub-footer a {
+      color: inherit; }
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -308,50 +361,6 @@ p.testimonial-copy {
   font-weight: 700;
   letter-spacing: 1px; }
 
-.footer {
-  color: #565656;
-  font-size: 1.4rem;
-  background: #171215; }
-  .footer .row {
-    padding-top: 2rem; }
-    .footer .row:not(:last-child) {
-      margin-bottom: 2rem; }
-  .footer .copyright {
-    float: left;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    padding-top: 1rem; }
-    @media (max-width: 56.25em) {
-      .footer .copyright {
-        float: none;
-        text-align: center; } }
-  .footer .social,
-  .footer .footer-social {
-    float: right;
-    font-size: 3rem; }
-    @media (max-width: 56.25em) {
-      .footer .social,
-      .footer .footer-social {
-        float: none;
-        text-align: center; } }
-    .footer .social a:link,
-    .footer .social a:visited,
-    .footer .footer-social a:link,
-    .footer .footer-social a:visited {
-      color: inherit;
-      text-decoration: none; }
-    .footer .social a:hover,
-    .footer .social a:active,
-    .footer .footer-social a:hover,
-    .footer .footer-social a:active {
-      color: rgba(86, 86, 86, 0.8); }
-  .footer .sub-footer {
-    border-top: 1px solid #1e1e1e;
-    color: inherit;
-    padding: 2.5rem 0; }
-    .footer .sub-footer a {
-      color: inherit; }
-
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -396,6 +405,9 @@ p.testimonial-copy {
   overflow: hidden;
   background-color: #fff;
   width: 100%; }
+  @media (max-width: 75em) {
+    .header {
+      overflow: visible; } }
   .header .social {
     font-size: 3rem; }
     @media (max-width: 56.25em) {

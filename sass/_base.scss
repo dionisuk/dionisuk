@@ -48,6 +48,7 @@ body {
 
   @include respond(tab-land) {
     padding: 0;
+    overflow-x: hidden;
   }
 }
 
@@ -68,6 +69,7 @@ section {
 
   &.section-statement {
     position: relative;
+    z-index: 5;
 
     @include respond(tab-port) {
       padding: 0rem 3rem;
@@ -121,7 +123,6 @@ section {
 //Projects
 
 .section-projects {
-  overflow: hidden;
   position: relative;
   .project-preview {
     max-width: 70rem;
@@ -129,6 +130,19 @@ section {
     z-index: 3;
     &.left {
       transform: translateX(-8rem);
+    }
+  }
+}
+
+// Section Testimonials
+
+.section-testimonials {
+  @include respond(tab-land) {
+    position: relative;
+    z-index: 1;
+
+    .subtitle {
+      margin-bottom: 4rem;
     }
   }
 }
@@ -159,6 +173,8 @@ section {
   @include respond(tab-port) {
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   &--right {
     margin-left: 5rem;
@@ -172,7 +188,6 @@ section {
 
 .project-tools {
   margin: 3rem 0;
-  width: 25rem;
   @include respond(tab-port) {
     margin: 3rem auto;
   }
@@ -349,7 +364,10 @@ p.testimonial-copy {
   }
   .sub-footer {
     border-top: 1px solid #1e1e1e;
-    color: #3b3b3b;
+    color: inherit;
     padding: 2.5rem 0;
+    a {
+      color: inherit;
+    }
   }
 }
